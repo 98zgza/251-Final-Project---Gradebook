@@ -24,3 +24,13 @@ Functions:
 
 The way I learned is that we should have header files '.h' and c files '.c'  header files declare everything and c files implement
 
+I think our structure can have these variables. Maybe two structures would be optimal, lmk what yall think.
+Student ID
+name
+grade
+Assignment Name
+student count
+
+
+
+
