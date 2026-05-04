@@ -12,7 +12,7 @@ start here so were all using the same variables and function names to make it ea
 Functions:
 1. Add student
 2. Find student
-3. update student
+3. Update student
 4. Add grade
 5. Edit grade
 6. Delete grade
