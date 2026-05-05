@@ -27,7 +27,7 @@ void addGrade(Student* s)
         printf("\n");
         printf("Invalid input. Enter an integer from %d - %d: ", GRADE_MIN, GRADE_MAX);
 		while (getchar() != '\n'); // Clear input buffer. Otherwise will get infinite loop when invalid input.
-     
+     								// Also from stack overflow
      }
 
     s->grades[countTrack].grade = tempGrade;
@@ -37,3 +37,4 @@ void addGrade(Student* s)
 
 
 // While loop Reference: https://stackoverflow.com/questions/4072190/check-if-input-is-integer-type-in-c
+// Clear input buffer reference: https://stackoverflow.com/questions/7898215/clear-input-buffer-in-c
