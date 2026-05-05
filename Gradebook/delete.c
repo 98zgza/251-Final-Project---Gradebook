@@ -4,3 +4,4 @@
             students[j] = students[j+1];
 
         }
+//needs work but place holder to organize//
