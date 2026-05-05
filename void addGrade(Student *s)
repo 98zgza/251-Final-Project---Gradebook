@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include "student.h"
+
+void addGrade(Student* s)
+{
+    // Set count track to number of inputted grades
+    int countTrack = s->grade_count;
+
+    // Check if gradebook is at capacity, return if full
+    if (s->grade_count >= GRADE_LIMIT)
+    {
+        printf("Sorry, grade book is max capacity!");
+        return;
+    }
+
+    //Auto generate assignment name, while I figure out how to  request uInput
+    sprintf_s(s->grades[countTrack].assignment_name, NAME_LIMIT, "Assignment %d", countTrack);
+
+ 
+    int tempGrade;
+    printf("Enter an integer grade 0 - 100: ");
+
+   // While loop with Grade_MIN and GRADE_MAX are my ideas. Using scanf%d != 1 to check if valid int is from
+   // stack overflow discussion post.
+    while (scanf_s("%d", &tempGrade) != 1 || tempGrade < GRADE_MIN || tempGrade > GRADE_MAX)
+     {    
+        printf("\n");
+        printf("Invalid input. Enter an integer from %d - %d: ", GRADE_MIN, GRADE_MAX);
+		while (getchar() != '\n'); // Clear input buffer. Otherwise will get infinite loop when invalid input.
+     
+     }
+
+    s->grades[countTrack].grade = tempGrade;
+    s->grade_count++;
+    printf("Success!\n");
+}
+
+
+// While loop Reference: https://stackoverflow.com/questions/4072190/check-if-input-is-integer-type-in-c
