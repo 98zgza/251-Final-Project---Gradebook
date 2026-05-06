@@ -9,8 +9,8 @@ Manage a simple student records file that survives across runs. Support adding, 
 
 My idea is that we have a gradebook structure to define all our variables then work on our functions. I think it'll be good to
 start here so were all using the same variables and function names to make it easier to compile it all together.
-Functions:
-1. Add student
+Functions: 
+1. Add Student ( Complete )
 2. Find student
 3. Update student
 4. List grade  ( Complete )
