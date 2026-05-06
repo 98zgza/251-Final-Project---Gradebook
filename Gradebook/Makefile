@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
 
-gradebook: main.c student.c addStudent.c findStudent.c listStudent.c sort.c
-  $(CC) $(CFLAGS) main.c student.c addStudent.c findStudent.c listStudent.c sort.c -o gradebook 
+gradebook: main.c addStudent.c findStudent.c updateStudent.c addGrade.c deleteGrade.c listGrade.c validateInput.c
+	gcc main.c addStudent.c findStudent.c updateStudent.c addGrade.c deleteGrade.c listGrade.c validateInput.c -o gradebook
 
 clean:
     rm -f gradebook

@@ -3,7 +3,7 @@
 #include "addStudent.h"
 #include "updateStudent.h"
 #include "listStudent.h"
-
+#include "deleteGrade.h"
 
 int main(void){
     Student students[STUDENT_LIMIT];
