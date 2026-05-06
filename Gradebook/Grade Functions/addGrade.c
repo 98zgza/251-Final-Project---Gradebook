@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "student.h"
+#include "addGrade.h"
+#include "validateInput.h"
 
 
 // Adds grade to a student. Checks if gradebook is at capacity and returns if so.
@@ -20,8 +22,13 @@ void addGrade(Student* s)
 
     //Auto generate assignment name, while I figure out how to  request uInput
     // sprintf_s(destination, size, format, val)
-    sprintf_s(s->grades[countTrack].assignment_name, NAME_LIMIT, "Assignment %d", countTrack);
-
+    snprintf(
+        s->grades[countTrack].assignment_name,
+        NAME_LIMIT,
+        "Assignment %d",
+        countTrack + 1
+    );
+    
     int tempGrade = validateGradeInput();
 
     // Upgrade appropriate value in grades array and iterate grade_count.
