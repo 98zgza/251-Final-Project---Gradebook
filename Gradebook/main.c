@@ -120,7 +120,7 @@ int main(void)
                 break;
         }
 
-    } while (menuChoice != 10);
+    } while (menuChoice != 11);
 
     return 0;
 }
