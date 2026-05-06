@@ -1,6 +1,6 @@
 //sort header//
 #ifndef SORT_H
-#definde SORT_H
+#define SORT_H
 
 #include "student.h"
 
