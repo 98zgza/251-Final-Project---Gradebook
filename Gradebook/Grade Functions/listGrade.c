@@ -1,7 +1,7 @@
 // Uses a for loop from 0 to grade and ouputs assignment name and grade.
 #include <stdio.h>
 #include "student.h"
-#include "listGrade.h"
+#include "listGrades.h"
 
 void listGrade(Student* s)
 {
