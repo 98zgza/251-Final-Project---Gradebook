@@ -1,6 +1,6 @@
-// Check refs at student.h. These apply to all 3 validate functions
-// Ensures value entered is an integer and within grade limits.
-// I utilized code I found in a stack overflow forum to accomplish this.
+// Check refs at student.h. These apply to all 3 validate functions//
+// Ensures value entered is an integer and within grade limits.//
+// I utilized code I found in a stack overflow forum to accomplish this.//
 #include <stdio.h>
 #include "student.h"
 #include "validateInput.h"

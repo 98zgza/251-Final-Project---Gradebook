@@ -1,6 +1,6 @@
-// Edits student grade. Checks if gradebook is empty and returns if so.
-// Prompts user to select assignment number(integer val) to edit and checks if valid number.
-// Edits grade and will validate the input then print succcess message.
+// Edits student grade. Checks if gradebook is empty and returns if so.//
+// Prompts user to select assignment number(integer val) to edit and checks if valid number.//
+// Edits grade and will validate the input then print succcess message.//
 #include <stdio.h>
 #include "student.h"
 #include "editGrade.h"

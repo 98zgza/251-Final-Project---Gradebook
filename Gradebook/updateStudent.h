@@ -1,4 +1,4 @@
-//finds and updates student
+
 #ifndef UPDATE_STUDENT_H
 #define UPDATE_STUDENT_H
 

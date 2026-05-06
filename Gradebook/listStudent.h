@@ -3,6 +3,6 @@
 
 #include "student.h"
 
-void listStudnets(Student students[], int student_count);
+void listStudents(Student students[], int student_count);
 
 #endif

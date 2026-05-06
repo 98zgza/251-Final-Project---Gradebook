@@ -1,4 +1,4 @@
-//student header//
+
 #ifndef STUDENT_H
 #define STUDENT_H
 

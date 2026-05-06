@@ -1,4 +1,3 @@
-//Will add student to list
 #include <stdio.h>
 #include <string.h>
 #include "student.h"

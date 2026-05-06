@@ -1,7 +1,7 @@
-// Checks if gradebook is empty and returns if so.
-// Prompt user to select assignment number(integer val) to delete and checks if valid number.
-// Deletes grade by overwrittin value at grade[uInput] with value grade[uInput + 1] and iterates til end of array.
-// Decrements grade count and prints success message.
+// Checks if gradebook is empty and returns if so.//
+// Prompt user to select assignment number(integer val) to delete and checks if valid number.//
+// Deletes grade by overwrittin value at grade[uInput] with value grade[uInput + 1] and iterates til end of array.//
+// Decrements grade count and prints success message.//
 #include <stdio.h>
 #include "student.h"
 #include "deleteGrade.h"
