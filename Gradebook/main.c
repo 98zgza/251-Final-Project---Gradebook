@@ -29,9 +29,9 @@ int main(void)
         printf("6. Delete Grade\n");
         printf("7. List Grades\n");
         printf("8. Sort Students by ID\n");
-        printf("9. List students\n");
+        printf("9. List Students\n");
         printf("10. Exit\n");
-        
+
         printf("Select an option: ");
 
         menuChoice = validMenuSelection();
@@ -71,7 +71,7 @@ int main(void)
 
                 if (studentIndex != -1)
                 {
-                    listGrade(&students[studentIndex]);
+                    editGrade(&students[studentIndex]);
                 }
 
                 break;
@@ -110,17 +110,19 @@ int main(void)
                 break;
 
             case 9:
-                listStudents(students,student_count);
+                listStudents(students, student_count);
                 break;
+
             case 10:
-                listStudents(students,student_count);
+                printf("Exiting gradebook.\n");
                 break;
+
             default:
                 printf("Invalid menu option.\n");
                 break;
         }
 
-    } while (menuChoice != 11);
+    } while (menuChoice != 10);
 
     return 0;
 }
