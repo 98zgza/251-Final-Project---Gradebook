@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 #include "student.h"
 #include "listStudent.h"
 
