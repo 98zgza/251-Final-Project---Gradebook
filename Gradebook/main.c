@@ -2,6 +2,7 @@
 #include "student.h"
 #include "addStudent.h"
 #include "updateStudent.h"
+#include "listStudent.h"
 
 
 int main(void){
@@ -9,5 +10,6 @@ int main(void){
     int student_count = 0;
     addStudent(students,&student_count);
     printf("Student added: %s\n",students[0].student_name);
+    listStudents(students, student_count);
     return 0;
 } //body to addstudent
