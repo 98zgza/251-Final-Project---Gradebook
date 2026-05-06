@@ -8,7 +8,7 @@ void listGrade(Student* s)
     printf("=======================================\n");
     for (int i = 0; i < s->grade_count; i++)
     {
-        printf("%s\tGrade: %d\n", s->grades[i].assignment_name, s->grades[i].grade);
+        printf("Assignment %d\tGrade: %d\n", i + 1, s->grades[i].grade);
     }
     printf("=======================================\n");
 } // End of void listGrade(Student *s)
