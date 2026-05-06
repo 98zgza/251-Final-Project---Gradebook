@@ -16,13 +16,18 @@ void loadStudents(Student students[], int *student_count)
                   students[*student_count].student_name,
                   &students[*student_count].id) == 2)
     {
-        students[*student_count].grade_count = 0;
+        fscanf(myFile, " Grades:%d",
+               &students[*student_count].grade_count);
 
-        while (fscanf(myFile, "%s %d",
-                      students[*student_count].grades[students[*student_count].grade_count].assignment_name,
-                      &students[*student_count].grades[students[*student_count].grade_count].grade) == 2)
+        for (int j = 0; j < students[*student_count].grade_count; j++)
         {
-            students[*student_count].grade_count++;
+            fscanf(myFile, "%d",
+                   &students[*student_count].grades[j].grade);
+
+            snprintf(students[*student_count].grades[j].assignment_name,
+                     NAME_LIMIT,
+                     "Assignment %d",
+                     j + 1);
         }
 
         (*student_count)++;
@@ -30,4 +35,3 @@ void loadStudents(Student students[], int *student_count)
 
     fclose(myFile);
 }
-
