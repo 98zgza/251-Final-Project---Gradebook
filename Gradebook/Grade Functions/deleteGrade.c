@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include "student.h"
 #include "deleteGrade.h"
-#include "listGrade.h"
+#include "listGrades.h"
 
 
 void deleteGrade(Student *s)
