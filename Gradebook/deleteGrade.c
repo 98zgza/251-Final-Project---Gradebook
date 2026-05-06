@@ -21,10 +21,10 @@ void deleteGrade(Student *s)
     listGrade(s);
     printf("Enter assignment number: ");
 
-    while (scanf("%d", &uInput) != 1 || uInput < 0 || uInput >= s->grade_count)
+    while (scanf("%d", &uInput) != 1 || uInput <= 0 || uInput > s->grade_count)
     {
         
-        printf("Invalid input. Select an integer from 0 - %d: ", s->grade_count - 1);
+        printf("Invalid input. Select an integer from 1 - %d: ", s->grade_count);
         while (getchar() != '\n'); {
 
         }// Clear input buffer. Otherwise will get infinite loop when invalid input. 
@@ -35,6 +35,8 @@ void deleteGrade(Student *s)
     {
         // Clear input buffer after valid input
     }
+
+    uInput--;
 
     for (int i = uInput; i < s->grade_count - 1; i++)
     {

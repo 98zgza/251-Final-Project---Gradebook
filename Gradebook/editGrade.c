@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "student.h"
 #include "editGrade.h"
-#include "listGrade.h"
+#include "listGrades.h"
 #include "validateInput.h"
 
 void editGrade(Student *s)
