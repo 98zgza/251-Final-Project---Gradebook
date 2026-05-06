@@ -17,6 +17,7 @@ typedef struct
 
 typedef struct
 {
+    int id;
     char student_name[NAME_LIMIT];
     Grade grades[GRADE_LIMIT];
     int grade_count;
