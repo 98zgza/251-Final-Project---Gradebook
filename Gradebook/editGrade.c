@@ -23,7 +23,7 @@ void editGrade(Student *s)
     
     
     printf("Select assignment number to edit: ");
-    while (scanf("%d", &uInput) != 1 || uInput < 0 || uInput >= s->grade_count)
+    while (scanf("%d", &uInput) != 1 || uInput <= 0 || uInput > s->grade_count)
     {
        
         printf("Invalid input. Select a valid assignment number: ");
@@ -37,6 +37,7 @@ void editGrade(Student *s)
         // Clear input buffer after valid input
     }
 
+    uInput--;
     tempGrade = validateGradeInput();
 
 
