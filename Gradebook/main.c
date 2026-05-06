@@ -69,7 +69,7 @@ int main(void)
 
                 if (studentIndex != -1)
                 {
-                    editGrade(&students[studentIndex]);
+                    listGrade(&students[studentIndex]);
                 }
 
                 break;
