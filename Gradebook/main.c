@@ -11,6 +11,7 @@
 #include "listStudent.h"
 #include "validateInput.h"
 #include "sort.h"
+#include "deleteStudent.h"
 
 int main(void)
 {
@@ -32,7 +33,8 @@ int main(void)
         printf("8. Sort Students by ID\n");
         printf("9. List Students\n");
         printf("10. Show Stats\n");
-        printf("11. Exit\n");
+        printf("11. Delete Student\n");
+        printf("12. Exit\n");
 
         printf("Select an option: ");
 
@@ -120,6 +122,10 @@ int main(void)
                 break;    
             
             case 11:
+                deleteStudent(students, &student_count);
+                break;
+
+            case 12:
                 printf("Exiting gradebook.\n");
                 break;
 
@@ -128,7 +134,7 @@ int main(void)
                 break;
         }
 
-    } while (menuChoice != 11);
+    } while (menuChoice != 12);
 
     return 0;
 }

@@ -7,7 +7,7 @@
 #define STUDENT_LIMIT 30
 #define GRADE_MIN 0
 #define GRADE_MAX 100
-#define MENU_TOTAL_OPTIONS 11
+#define MENU_TOTAL_OPTIONS 12
 
 
 typedef struct
