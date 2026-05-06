@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "student.h"
 #include "addStudent.h"
+#include "updateStudent.h"
+
 
 int main(void){
     Student students[STUDENT_LIMIT];
