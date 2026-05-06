@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "student.h"
+#include "stats.h"
 #include "addStudent.h"
 #include "findStudent.h"
 #include "updateStudent.h"
@@ -30,7 +31,8 @@ int main(void)
         printf("7. List Grades\n");
         printf("8. Sort Students by ID\n");
         printf("9. List Students\n");
-        printf("10. Exit\n");
+        printf("10. Show Stats\n");
+        printf("11. Exit\n");
 
         printf("Select an option: ");
 
@@ -114,6 +116,10 @@ int main(void)
                 break;
 
             case 10:
+                showStats(students, student_count);
+                break;    
+            
+            case 11:
                 printf("Exiting gradebook.\n");
                 break;
 
@@ -122,7 +128,7 @@ int main(void)
                 break;
         }
 
-    } while (menuChoice != 10);
+    } while (menuChoice != 11);
 
     return 0;
 }
