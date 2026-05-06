@@ -1,4 +1,3 @@
-//updates student's name if found//
 #include <stdio.h>
 #include <string.h>
 #include "student.h"
@@ -19,6 +18,7 @@ void updateStudent(Student students[], int student_count)
     printf("Enter student name to update: ");
     fgets(searchName, NAME_LIMIT, stdin);
 
+    searchName[strcspn(searchName, "\n")] = '\0';
 
     // Finds student
     for (int i = 0; i < student_count; i++)
@@ -39,7 +39,9 @@ void updateStudent(Student students[], int student_count)
     printf("Enter new student name: ");
     fgets(newName, NAME_LIMIT, stdin);
 
-    strcpy(students[studentIndex].student_name,newName);
+    newName[strcspn(newName, "\n")] = '\0';
+
+    strcpy(students[studentIndex].student_name, newName);
 
     printf("Student updated successfully!\n");
 }
