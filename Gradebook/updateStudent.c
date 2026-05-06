@@ -39,7 +39,7 @@ void updateStudent(Student students[], int student_count)
     printf("Enter new student name: ");
     fgets(newName, NAME_LIMIT, stdin);
 
-    strcpy_s(students[studentIndex].student_name, NAME_LIMIT, newName);
+    strcpy(students[studentIndex].student_name,newName);
 
     printf("Student updated successfully!\n");
 }

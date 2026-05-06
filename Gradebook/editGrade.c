@@ -37,7 +37,7 @@ void editGrade(Student *s)
         // Clear input buffer after valid input
     }
 
-    int tempGrade = validateGradeInput();
+    tempGrade = validateGradeInput();
 
 
     s->grades[uInput].grade = tempGrade;
