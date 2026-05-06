@@ -7,6 +7,7 @@
 #include "editGrade.h"
 #include "deleteGrade.h"
 #include "listGrades.h"
+#include "listStudent.h"
 #include "validateInput.h"
 #include "sort.h"
 
