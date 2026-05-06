@@ -13,14 +13,15 @@ Functions:
 1. Add student
 2. Find student
 3. Update student
-4. Add grade
-5. Edit grade
-6. Delete grade
-7. list students
+4. List grade  ( Complete )
+5. Add grade ( Complete )
+6. Edit grade  ( Complete )
+7. Delete grade ( Complete )
+8. list students
    I. Using insertion/selection/etc sort
    
-8. Save info/load in previous info  // I think a text file is fine?
-9. Design UI                        // I think it'll be be good to make this barebones, but functional at first. Then make it pretty                                        // later if we have time.
+9. Save info/load in previous info  // I think a text file is fine?
+10. Design UI                        // I think it'll be be good to make this barebones, but functional at first. Then make it pretty                                        // later if we have time.
 
 The way I learned is that we should have header files '.h' and c files '.c'  header files declare everything and c files implement
 
