@@ -1,0 +1,16 @@
+int validateGradeInput()
+{
+      While loop with Grade_MIN and GRADE_MAX are my ideas. Using scanf%d // != 1 to check if valid int is from
+    // stack overflow discussion post.
+    int uInput;
+	printf("Enter an integer grade %d - %d: ", GRADE_MIN, GRADE_MAX);
+    while (scanf_s("%d", &uInput) != 1 || uInput < GRADE_MIN || uInput > GRADE_MAX)
+    {
+        printf("\n");
+        printf("Invalid input. Enter an integer from %d - %d: ", GRADE_MIN, GRADE_MAX);
+        while (getchar() != '\n'); // Clear input buffer. Otherwise will get infinite loop when invalid input. 
+        // Also from stack overflow
+
+    }
+	return uInput;
+}
