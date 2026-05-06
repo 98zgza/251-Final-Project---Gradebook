@@ -3,6 +3,6 @@
 
 #include "student.h"
 
-void listGrade(Student* s);
+void editGrade(Student* s);
 
 #endif
