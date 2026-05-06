@@ -3,6 +3,6 @@
 
 #include "student.h"
 
-void addStudent(Student students[],int* studnet_count);
+void addStudent(Student students[],int* student_count);
 
 #endif
