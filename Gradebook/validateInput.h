@@ -4,5 +4,6 @@
 int validateGradeInput(void);
 int validateStudentSelection(void);
 int validMenuSelection(void);
+int validateGradeInput(void);
 
 #endif

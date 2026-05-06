@@ -4,6 +4,8 @@
 #include "updateStudent.h"
 #include "listStudent.h"
 #include "deleteGrade.h"
+#include "editGrade.h"
+
 
 int main(void){
     Student students[STUDENT_LIMIT];

@@ -1,8 +1,16 @@
 // Edits student grade. Checks if gradebook is empty and returns if so.
 // Prompts user to select assignment number(integer val) to edit and checks if valid number.
 // Edits grade and will validate the input then print succcess message.
+#include <stdio.h>
+#include "student.h"
+#include "editGrade.h"
+#include "listGrades.h"
+#include "validateInput.h"
+
 void editGrade(Student *s)
 {
+    int uInput;
+    int tempGrade;
     if (s->grade_count == 0)
     {
         printf("Empty gradebook.");
@@ -11,17 +19,23 @@ void editGrade(Student *s)
 
     printf("Select which grade to edit by assignment number\n");
     listGrade(s);
-    printf("\n");
     
-    int uInput;
+    
+    
     printf("Select assignment number to edit: ");
-    while (scanf_s("%d", &uInput) != 1 || uInput < 0 || uInput >= s->grade_count)
+    while (scanf("%d", &uInput) != 1 || uInput < 0 || uInput >= s->grade_count)
     {
-        printf("\n");
+       
         printf("Invalid input. Select a valid assignment number: ");
-		while (getchar() != '\n'); // Clear input buffer. Otherwise will get infinite loop when invalid input.
+		while (getchar() != '\n'); {
+
+        }// Clear input buffer. Otherwise will get infinite loop when invalid input.
     }
 
+    while (getchar() != '\n')
+    {
+        // Clear input buffer after valid input
+    }
 
     int tempGrade = validateGradeInput();
 
