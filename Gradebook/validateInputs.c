@@ -1,6 +1,10 @@
 // Check refs at student.h. These apply to all 3 validate functions
 // Ensures value entered is an integer and within grade limits.
 // I utilized code I found in a stack overflow forum to accomplish this.
+#include <stdio.h>
+#include "student.h"
+#include "validateInput.h"
+
 int validateGradeInput() // Ref[1]/Ref[2]
 {
     // While loop with val are my ideas. Using scanf%d != 1 to check if valid int is from
