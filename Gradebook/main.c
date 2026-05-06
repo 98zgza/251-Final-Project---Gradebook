@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "saveStudents.h"
+#include "loadStudents.h"
 #include "student.h"
 #include "stats.h"
 #include "addStudent.h"
@@ -19,6 +21,7 @@ int main(void)
     int student_count = 0;
     int menuChoice;
     int studentIndex;
+    loadStudents(students, &student_count);
 
     do
     {
@@ -126,6 +129,7 @@ int main(void)
                 break;
 
             case 12:
+                saveStudents(students, student_count);
                 printf("Exiting gradebook.\n");
                 break;
 
