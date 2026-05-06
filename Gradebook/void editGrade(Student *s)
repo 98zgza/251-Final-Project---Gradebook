@@ -1,0 +1,38 @@
+void editGrade(Student *s)
+{
+    if (s->grade_count == 0)
+    {
+        printf("Empty gradebook.");
+        return;
+    }
+
+    printf("Select which grade to edit by assignment number\n");
+    listGrade(s);
+    printf("\n");
+    
+    int uInput;
+    printf("Select assignment number to edit: ");
+    while (scanf_s("%d", &uInput) != 1 || uInput < 0 || uInput >= s->grade_count)
+    {
+        printf("\n");
+        printf("Invalid input. Select a valid assignment number: ");
+		while (getchar() != '\n'); // Clear input buffer. Otherwise will get infinite loop when invalid input.
+    }
+
+
+    int tempGrade;
+	printf("Enter a new grade for %s from %d to %d: ", s->grades[uInput].assignment_name, GRADE_MIN,GRADE_MAX);
+    // While loop with Grade_MIN and GRADE_MAX are my ideas. Using scanf%d != 1 to check if valid int is from
+   // stack overflow discussion post.
+    while (scanf_s("%d", &tempGrade) != 1 || tempGrade < GRADE_MIN || tempGrade > GRADE_MAX)
+    {
+        printf("\n");
+        printf("Invalid input. Enter an integer from %d - %d: ", GRADE_MIN, GRADE_MAX);
+        while (getchar() != '\n'); // Clear input buffer. Otherwise will get infinite loop when invalid input. 
+        // Also from stack overflow
+
+    }
+
+    s->grades[uInput].grade = tempGrade;
+    printf("Success, grade editted!\n");
+} // End listGrade(Student *s)
