@@ -14,10 +14,6 @@ void addStudent(Student students[], int* student_count)
 
     int countTrack = *student_count;
 
-    printf("Enter student ID: ");
-    scanf("%d", &students[countTrack].id);
-
-    while (getchar() != '\n');
 
     printf("Enter student name: ");
     fgets(students[countTrack].student_name, NAME_LIMIT, stdin);
