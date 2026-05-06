@@ -25,7 +25,7 @@ void deleteGrade(Student *s)
     {
         
         printf("Invalid input. Select an integer from 1 - %d: ", s->grade_count);
-        while (getchar() != '\n'); {
+        while (getchar() != '\n') {
 
         }// Clear input buffer. Otherwise will get infinite loop when invalid input. 
         // Also from stack overflow
