@@ -109,11 +109,11 @@ int main(void)
 
                 break;
 
-            case 10:
-                printf("Exiting gradebook.\n");
-                break;
             case 9:
-                listStudent(students,student_count);
+                listStudents(students,student_count);
+                break;
+            case 10:
+                listStudents(students,student_count);
                 break;
             default:
                 printf("Invalid menu option.\n");
