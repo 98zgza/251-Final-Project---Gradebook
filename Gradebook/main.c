@@ -91,7 +91,7 @@ int main(void)
 
                 if (studentIndex != -1)
                 {
-                    listGrades(&students[studentIndex]);
+                    listGrade(&students[studentIndex]);
                 }
 
                 break;
