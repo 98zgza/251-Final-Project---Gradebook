@@ -1,5 +1,5 @@
-#ifndef LIST_GRADE_H
-#define LIST_GRADE_H
+#ifndef EDIT_GRADE_H
+#define EDIT_GRADE_H
 
 #include "student.h"
 
