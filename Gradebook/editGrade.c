@@ -27,7 +27,7 @@ void editGrade(Student *s)
     {
        
         printf("Invalid input. Select a valid assignment number: ");
-		while (getchar() != '\n'); {
+		while (getchar() != '\n') {
 
         }// Clear input buffer. Otherwise will get infinite loop when invalid input.
     }
